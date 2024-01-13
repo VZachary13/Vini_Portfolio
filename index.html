@@ -12,12 +12,14 @@
         <section class="container">
             <nav>
                 <img src="./Assets/images/placeholder.jpg" alt="placeholder" class="logo">
-                <div class="nav"> 
+                <div class="nav" id="sidemenu"> 
                     <a href="#top">Home</a>
                     <a href="#about">About</a>
                     <a href="#portfolio">Portfolio</a>
                     <a href="#contact">Contact</a>
+                    <i class="fa-solid fa-xmark" onclick="closeMenu()"></i>
                 </div>
+                <i class="fa-solid fa-bars" id="hbBtn" onclick="openMenu()"></i>
             </nav>
             <section class="header-text">
                 <p>Full-Stack Devleoper</p>
@@ -38,9 +40,9 @@
                         Animi mollitia quae alias fuga veniam voluptatum? Recusandae qui dolores doloribus, 
                         dignissimos explicabo atque consequuntur dolore animi nam beatae neque rem aut?</p>
                     <section class="tab-titles">
-                        <h2 class="tab-links active-link" onclick="opentab('technical-skills')">Technical Skills</h2>
-                        <h2 class="tab-links" onclick="opentab('certifications')">Certifications</h2>
-                        <h2 class="tab-links" onclick="opentab('soft-skills')">Soft Skills</h2>
+                        <h2 class="tab-links active-link tab1" onclick="opentab('technical-skills')">Technical Skills</h2>
+                        <h2 class="tab-links tab2" onclick="opentab('certifications')">Certifications</h2>
+                        <h2 class="tab-links tab3" onclick="opentab('soft-skills')">Soft Skills</h2>
                     </section>
                     <section class="tab-contents active-tab" id="technical-skills">
                         <ul>
@@ -51,7 +53,7 @@
                     </section>
                     <section class="tab-contents" id="certifications">
                         <ul>
-                            <li><span>ASU Full-Stack Developer</span><br>Earned: --placeholder--</li>
+                            <li><span>ASU Full-Stack Developer</span><br>Earned: May 2024</li>
                             <li><span>AWS Cloud Practitioner</span><br>Earned: --placeholder--</li>
                             <li><span>AWS Solutions Architecht</span><br>Earned --placeholder--</li>
                         </ul>

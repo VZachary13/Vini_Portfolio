@@ -120,7 +120,7 @@ nav a:hover::after {
     background: #ff004f;
     position: absolute;
     left: 0;
-    bottom: -8px;
+    bottom: -6px;
     transition: 0.5s;
 }
 .tab-links.active-link::after {
@@ -285,4 +285,78 @@ footer{
     background-color: #262626;
     font-weight: 300;
     margin-top: 20px;
+}
+footer .fa-solid{
+    color: red;
+}
+
+/* -----------------------Media Query-------------------------- */
+nav .fa-solid{
+    display: none;
+}
+
+@media only screen and (max-width: 707px){
+    .header-text{
+        margin-top: 100%;
+        font-size: 16px;
+    }
+    .header-text h1{
+        font-size: 30px;
+    }
+    nav .fa-solid{
+        display: block;
+        font-size: 25px;
+        cursor: pointer;
+    }
+    nav .nav{
+        background-color: #ff004f;
+        position: fixed;
+        top: 0;
+        right: -200px;
+        width: 200px;
+        height: 100vh;
+        padding-top: 50px;
+        z-index: 2;
+        transition: 0.5s;
+    }
+
+    nav a{
+        display: block;
+        margin: 25px;
+    }
+    .nav .fa-solid{
+        position: absolute;
+        top: 25px;
+        left: 25px;
+    }
+    .about1 img{
+        max-width: 320px;
+        margin-left: -32px;
+    }
+    .about2{
+        max-width: 320px;
+        flex-basis: auto;
+    }
+    .tab-titles{
+        flex-direction: column;
+    }
+    .tab-titles h2{
+        margin-top: 6px;
+    }
+    .sub-title{
+        font-size: 38px;
+        text-align: left;
+    }
+    .contact-left .sub-title{
+        width: 320px;
+    }
+    .tab1{
+        width: 145px;
+    }
+    .tab2{
+        width: 125px;
+    }
+    .tab3{
+        width: 105px;
+    }
 }
