@@ -47,7 +47,9 @@ nav a {
     font-size: 18px;
     position: relative;
 }
-
+.logo {
+    border-radius: 50%;
+}
 nav a::after {
     content: '';
     width: 0;
